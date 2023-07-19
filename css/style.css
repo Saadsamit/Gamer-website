@@ -27,12 +27,23 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+.btn{
+    color: var(--white);
+    background: var(--nav-linear);
+    padding: 20px 40px;
+    border-radius: 40px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 :root{
     --nav-linear: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     --nav-color: #3C354F;
     --white: #FFF;
     --heading-color: #0B0223;
     --header-linear: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    --para: #534C64;
+
 }
 /* common css end */
 /* header css start */
@@ -93,4 +104,65 @@ header #nav-bar .container nav ul li a i.fa-tiktok{
     text-shadow: 1px -2px 2px rgba(8,255,249,0.6);
 }
 /* navbar css end */
+/* banner css start */
+header #banner .banner_contain{
+    align-items: center;
+}
+header #banner .banner_contain .info,
+header #banner .banner_contain .banner_img{
+    width: 50%;
+}
+header #banner .banner_contain .info h1{
+    color: var(--heading-color);
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+header #banner .banner_contain .info h1 span{
+    display: block;
+    font-size: 5.9rem;
+    font-weight: 800;
+    background: var(--header-linear);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header #banner .banner_contain .info p{
+    color: var(--para);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+}
+header #banner .banner_contain .info p i{
+    background: var(--nav-linear);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+}
+header #banner .banner_contain .info p i.fa-play{
+    line-height: 24px;
+    border: 1px solid var(--heading-color);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+}
+header #banner .banner_contain .info p i.fa-user-group{
+    color: var(--heading-color);
+    background: none;
+    -webkit-text-fill-color: unset;
+}
+header #banner .banner_contain .info .links{
+    margin-top: 40px;
+}
+header #banner .banner_contain .info .banner-btn{
+    background: #4EC5F7;
+    margin-left: 24px;
+}
+/* banner css end */
 /* header css end */
