@@ -276,4 +276,47 @@ main #online_game .game_card_container .game_card p a{
     
 }
 /* online_game css end */
+/* new game css start */
+main #new_game{
+    padding-bottom: 100px;
+}
+main #new_game .game_container{
+    align-items: center;
+} 
+main #new_game .text,
+main #new_game .img{
+    width: 50%;
+}
+main #new_game .text{
+    padding-right: 180px;
+    text-align: end;
+}
+main #new_game .img {
+    position: relative;
+}
+main #new_game .img .img_overlay{
+    width: 50%;
+    position: absolute;
+    bottom: -20%;
+    left: -25%;
+}
+/* new game css end */
+/* new game second css start */
+main #new_game.second{
+    padding: 100px 0 125px;
+    margin-bottom: 100px;
+}
+main #new_game.second .game_container{
+    flex-direction: row-reverse;
+}
+main #new_game.second .img .img_overlay{
+    left: unset;
+    right: -25%;
+}
+main #new_game.second .text{
+    padding: 0;
+    padding-left: 180px;
+    text-align: start;
+}
+/* new game second css end */
 /* main css end */
