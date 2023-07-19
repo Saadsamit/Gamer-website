@@ -1,0 +1,96 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    display: block;
+    width: 100%;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    width: 85vw;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+:root{
+    --nav-linear: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    --nav-color: #3C354F;
+    --white: #FFF;
+    --heading-color: #0B0223;
+    --header-linear: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+}
+/* common css end */
+/* header css start */
+/* navbar css start */
+header #nav-bar{
+    background: var(--white);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 30px 0;
+}
+header #nav-bar .container{
+    justify-content: space-between;
+    align-items: center;
+}
+header #nav-bar .container .logo{
+    display: flex;
+    align-items: center;
+}
+header #nav-bar .container .logo img{
+    width: 85px;
+}
+header #nav-bar .container .logo .logo-name{
+    color: var(--heading-color);
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-left: 20px;
+}
+header #nav-bar .container .logo .logo-name span{
+    background: var(--nav-linear);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header #nav-bar .container nav ul li,
+header #nav-bar .container nav ul .nav_icon_group{
+    display: inline-block;
+}
+header #nav-bar .container nav ul li a{
+    color: var(--nav-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 15px;
+}
+header #nav-bar .container nav ul .nav_icon_group{
+    background: rgba(11, 2, 35, 0.10);
+    border-radius: 8px;
+}
+header #nav-bar .container nav ul li a.icon{
+    padding: 15px 10px;
+}
+header #nav-bar .container nav ul li a i{
+    font-size: 1.5rem;
+}
+header #nav-bar .container nav ul li a i.fa-youtube{
+    color: #F61C0D;
+}
+header #nav-bar .container nav ul li a i.fa-tiktok{
+    color: #000;
+    text-shadow: 1px -2px 2px rgba(8,255,249,0.6);
+}
+/* navbar css end */
+/* header css end */
