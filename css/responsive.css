@@ -1,10 +1,180 @@
 /* tablet css start */
-@media (max-width:766px) and (min-width:576.99px){
-    
+@media (max-width:770px) and (min-width:576.99px){
+    header #nav-bar .container {
+        justify-content: center;
+    }
+    header nav{
+        padding-top: 20px ;
+    }
+    header #banner .banner_contain{
+        flex-direction: column-reverse;
+    }
+    header #banner .banner_contain .info .banner-btn {
+        margin-left: 0;
+        margin-top: 24px;
+    }
+    header #banner .banner_contain .info, header #banner .banner_contain .banner_img {
+        width: 70%;
+        padding-top: 20px;
+    }
+    header #banner .banner_contain .info .links {
+        margin-top: 20px;
+    }
+    main .gamer_contain {
+        flex-direction: column;
+    }
+    main .gamer_contain .img {
+        width: 70%;
+    }
+    main .gamer_contain .text {
+        width: 70%;
+        text-align: center;
+    }
+    main #online_game {
+        padding: 0;
+    }
+    main #online_game .game_card_container {
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+    }
+    main #new_game {
+        padding-bottom: 50px;
+    }
+    main #new_game .game_container {
+        flex-direction: column-reverse;
+    }
+    main #new_game .img {
+        padding-top: 50px;
+    }
+    main #new_game .text, main #new_game .img {
+        width: 60%;
+    }
+    main #new_game .text {
+        padding-right: 0;
+        padding-top: 100px;
+        text-align: center;
+    }
+    main #new_game.second {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    main #new_game.second .game_container {
+        flex-direction: unset;
+        flex-direction: column-reverse;
+    }
+    main #new_game.second .text {
+        padding: 0;
+        padding-top: 100px;
+        text-align: center;
+    }
+    main #games .games_container .game_info {
+        width: calc(100% / 3);
+    }
+    main #games {
+        padding-bottom: 50px;
+    }
+    footer .links  a{
+        width: calc(100% / 3);
+        padding: 15px 0;
+    }
+    footer .terms a {
+        padding: 15px 20px;
+    }
 }
 /* tablet css end */
 /* mobile css start */
 @media (max-width:575px) {
-    
+    header #nav-bar .container {
+        justify-content: center;
+    }
+    header nav{
+        padding-top: 20px ;
+    }
+    header #nav-bar .container nav ul > li {
+        text-align: center;
+        display: block;
+    }
+    header #banner .banner_contain{
+        flex-direction: column-reverse;
+    }
+    header #banner .banner_contain .info .banner-btn {
+        margin-left: 0;
+        margin-top: 24px;
+    }
+    header #banner .banner_contain .info,
+     header #banner .banner_contain .banner_img {
+        width: 100%;
+        padding-top: 20px;
+    }
+    header #banner .banner_contain .info .links {
+        margin-top: 20px;
+    }
+    main .gamer_contain {
+        flex-direction: column;
+    }
+    main .gamer_contain .img {
+        width: 70%;
+    }
+    main .gamer_contain .text {
+        width: 100%;
+        text-align: center;
+    }
+    main #online_game {
+        padding: 0;
+    }
+    main #online_game .game_card_container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    main #new_game {
+        padding-bottom: 50px;
+    }
+    main #new_game .game_container {
+        flex-direction: column-reverse;
+    }
+    main #new_game .img {
+        padding-top: 50px;
+    }
+    main #new_game .text, main #new_game .img {
+        width: 60%;
+    }
+    main #new_game .text {
+        padding-right: 0;
+        padding-top: 100px;
+        text-align: center;
+    }
+    main #new_game {
+        padding-bottom: 0px;
+    }
+    main #new_game.second {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    main #new_game.second .game_container {
+        flex-direction: unset;
+        flex-direction: column-reverse;
+    }
+    main #new_game.second .text {
+        padding: 0;
+        padding-top: 100px;
+        text-align: center;
+    }
+    main #games .games_container .game_info {
+        width: 100%;
+    }
+    main #games {
+        padding-bottom: 50px;
+    }
+    footer .links  a{
+        width: calc(100% / 3);
+        padding: 15px 0;
+    }
+    footer .icons a {
+        padding: 15px 20px;
+        width: calc(100% / 3);
+    }
+    footer .terms a {
+        padding: 15px 20px;
+    }
 }
 /* mobile css end */
