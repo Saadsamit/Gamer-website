@@ -37,7 +37,7 @@ body{
     text-transform: uppercase;
 }
 :root{
-    --nav-linear: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    --nav-linear: #ff42a5;
     --nav-color: #3C354F;
     --white: #FFF;
     --heading-color: #0B0223;
@@ -71,10 +71,7 @@ header #nav-bar .container .logo .logo-name{
     padding-left: 20px;
 }
 header #nav-bar .container .logo .logo-name span{
-    background: var(--nav-linear);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--nav-linear);
 }
 header #nav-bar .container nav ul li,
 header #nav-bar .container nav ul .nav_icon_group{
@@ -136,10 +133,7 @@ header #banner .banner_contain .info p{
     margin-bottom: 20px;
 }
 header #banner .banner_contain .info p i{
-    background: var(--nav-linear);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--nav-linear);
     margin-right: 10px;
     text-align: center;
     width: 24px;
@@ -243,9 +237,9 @@ main #online_game .game_card_container .img .overlay{
     flex-direction: column;
     opacity: 0;
     visibility: hidden;
+    transition: all .5s;
 }
 main #online_game .game_card_container .img:hover .overlay{
-    transition: all .5s;
     opacity: 1;
     visibility: visible;
     cursor: pointer;
@@ -319,4 +313,99 @@ main #new_game.second .text{
     text-align: start;
 }
 /* new game second css end */
+/* games css start */
+main #games{
+    padding-bottom: 100px;
+}
+main #games .games_container{
+    justify-content: center;
+    
+}
+main #games .games_container .game_info{
+    width: calc(100% / 5);
+}
+main #games .games_container .game_info > a{
+    display: flex;
+    align-items: center;
+}
+main #games .games_container .game_info a img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+main #games .games_container .game_info a{
+    padding: 10px;
+    color: var(--heading-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;transition: all .6s;
+}
+main #games .games_container .game_info a:hover{
+    color: var(--nav-linear);
+    border: 1px solid var(--nav-linear);   
+}
+/* games css end */
 /* main css end */
+/* footer css start */
+footer{
+    background: var(--heading-color);
+    text-align: center;
+    padding: 75px 0;
+}
+footer .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+footer .logo img{
+    width: 85px;
+}
+footer .logo .logo-name{
+    color: var(--white);
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-left: 20px;
+}
+footer .logo .logo-name span{
+    color: var(--nav-linear);
+}
+footer .links{
+    justify-content: center;
+    padding: 15px 0;
+}
+footer .links a{
+    padding: 0 20px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+}
+footer .icons{
+    justify-content: center;
+    padding: 15px 0;
+}
+footer .icons a{
+    padding: 0 20px;
+}
+footer .icons a i{
+    color: var(--white);
+    font-size: 2rem;
+}
+footer .terms{
+    justify-content: center;
+    padding: 15px 0;
+}
+footer .terms a{
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+footer .last_text{
+    padding: 15px 0;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* footer css end */
