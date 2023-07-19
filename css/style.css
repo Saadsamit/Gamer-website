@@ -166,3 +166,114 @@ header #banner .banner_contain .info .banner-btn{
 }
 /* banner css end */
 /* header css end */
+/* main css start */
+/* gamer css start */
+#gamer{
+    padding: 50px 0;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+main .gamer_contain{
+    align-items: center;
+}
+main .gamer_contain .img{
+    width: 55%;
+}
+main .gamer_contain .text{
+    width: 45%;
+    text-align: end;
+}
+.text h3{
+    color: var(--heading-color);
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.text h3 span{
+    background: var(--header-linear);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text p{
+    color: var(--para);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    margin-bottom: 20px;
+}
+.text .btn{
+    margin-bottom: 20px;
+}
+.text .more_info{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.8rem; 
+}
+.text .more_info span{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+}
+/* gamer css end */
+/* online_game css start */
+main #online_game{
+    padding: 100px 0;
+}
+main #online_game .text{
+    text-align: center;
+    margin-bottom: 24px;
+}
+main #online_game .game_card_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+}
+main #online_game .game_card_container .img{
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+main #online_game .game_card_container .img .overlay{
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+}
+main #online_game .game_card_container .img:hover .overlay{
+    transition: all .5s;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+main #online_game .game_card_container .img .overlay i{
+    color: var(--white);
+    font-size: 3rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+main #online_game .game_card_container .img .overlay a{
+    background: var(--nav-linear);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main #online_game .game_card_container .game_card p{
+margin-top: 24px;
+}
+main #online_game .game_card_container .game_card p,
+main #online_game .game_card_container .game_card p a{
+    color: var(--para);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+}
+/* online_game css end */
+/* main css end */
