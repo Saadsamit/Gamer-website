@@ -20,6 +20,9 @@
     header #banner .banner_contain .info .links {
         margin-top: 20px;
     }
+    #gamer{
+        background: none;
+    }
     main .gamer_contain {
         flex-direction: column;
     }
@@ -32,6 +35,7 @@
     }
     main #online_game {
         padding: 0;
+        padding-top: 50px;
     }
     main #online_game .game_card_container {
         grid-template-columns: repeat(2,1fr);
@@ -45,9 +49,13 @@
     }
     main #new_game .img {
         padding-top: 50px;
-    }
-    main #new_game .text, main #new_game .img {
         width: 60%;
+    }
+    .text h3 {
+    font-size: 2.5rem;
+    }
+    main #new_game .text{
+        width: 100%;
     }
     main #new_game .text {
         padding-right: 0;
@@ -109,11 +117,14 @@
     header #banner .banner_contain .info .links {
         margin-top: 20px;
     }
+    #gamer{
+        background: none;
+    }
     main .gamer_contain {
         flex-direction: column;
     }
     main .gamer_contain .img {
-        width: 70%;
+        width: 100%;
     }
     main .gamer_contain .text {
         width: 100%;
@@ -132,10 +143,14 @@
     main #new_game .game_container {
         flex-direction: column-reverse;
     }
+    main #new_game .text{
+        width: 100%;
+    }
+    .text h3 {
+    font-size: 2.5rem;
+    }
     main #new_game .img {
         padding-top: 50px;
-    }
-    main #new_game .text, main #new_game .img {
         width: 60%;
     }
     main #new_game .text {
